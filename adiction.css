@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@700&display=swap');
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li {
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    color: rgb(255, 241, 241);
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: rgb(119, 119, 119);
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.banner {
+    background-image: url('https://sun9-23.userapi.com/impg/khUFul7neDXSoTnJOf8pzeA_CgYToNP_PC8OLw/bEZv6VhdrxY.jpg?size=1280x724&quality=96&sign=25f8b1ca8de6b1331ae1f4247f8e7a70&type=album');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 500px;
+}
+
+p {
+  display: none;
+}
+
+.Minezin {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+    row-gap: 10px;
+    margin-bottom: 10px
+}
+
+.imagemm {
+    margin-top: 30px;
+    width: 400px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.foto {
+    max-width: 100%;
+    text-align: center;
+    position: relative; /* Adicione a posição relativa ao container .foto */
+}
+
+
+h3 {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 50%; /* Move o h3 para o meio vertical */
+    left: 50%; /* Move o h3 para o meio horizontal */
+    transform: translate(-50%, -50%); /* Reposiciona para centralizar exatamente */
+    margin: 0;
+    background: none;
+    font-weight: bold;
+    user-select: none;
+}
+
+
+.imagemm:hover {
+    transform: scale(1.02);
+    transition: 2s;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: none;
+}
+
+#logoz {
+    width: 300px;
+    height: auto;
+}
+
+span {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media(max-width: 768px) {
+    .footer-nav {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .banner {
+        background-position: 5% 5%;
+    }
+
+    .Minezin {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1px 20px;
+        margin-bottom: 20px;
+        row-gap: 10px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+}
